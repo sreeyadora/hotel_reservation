@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxStay - Hotel Reservation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --light: #f8f9fa;
+            --dark: #2c3e50;
+        }
+
+        /* Navigation */
+        .navbar {
+            background-color: white;
+            padding: 1rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        .nav-links a {
+            color: var(--dark);
+            text-decoration: none;
+            margin-left: 2rem;
+            transition: color 0.3s;
+        }
+
+        /* Search Section */
+        .search-section {
+            padding-top: 80px;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/api/placeholder/1200/400');
+            background-size: cover;
+            padding: 8rem 2rem 4rem 2rem;
+            color: white;
+        }
+
+        .search-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .search-box {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .search-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .search-input {
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        .search-button {
+            background-color: var(--accent);
+            color: white;
+            border: none;
+            padding: 0.8rem;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+
+        /* Room Listings */
+        .rooms-section {
+            padding: 4rem 2rem;
+            background-color: var(--light);
+        }
+
+        .rooms-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .room-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .room-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .room-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .room-details {
+            padding: 1.5rem;
+        }
+
+        .room-price {
+            color: var(--accent);
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+
+        .room-features {
+            display: flex;
+            gap: 1rem;
+            margin: 1rem 0;
+            color: #666;
+        }
+
+        .book-button {
+            background-color: var(--secondary);
+            color: white;
+            border: none;
+            padding: 0.8rem;
+            border-radius: 5px;
+            width: 100%;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 3rem 2rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+        }
+
+        .footer-section p {
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .search-section {
+                padding: 6rem 1rem 2rem 1rem;
+            }
+
+            .room-card {
+                margin: 0 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">LuxStay</div>
+            <div class="nav-links">
+                <a href="#rooms">Rooms</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="#login">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="search-container">
+            <h1>Find Your Perfect Stay</h1>
+            <div class="search-box">
+                <div class="search-grid">
+                    <input type="date" class="search-input" placeholder="Check-in Date">
+                    <input type="date" class="search-input" placeholder="Check-out Date">
+                    <select class="search-input">
+                        <option>1 Adult</option>
+                        <option>2 Adults</option>
+                        <option>3 Adults</option>
+                        <option>4 Adults</option>
+                    </select>
+                    <button class="search-button">Search Rooms</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Room Listings -->
+    <section class="rooms-section">
+        <div class="rooms-grid">
+            <!-- Room Card 1 -->
+            <div class="room-card">
+                <img src="/api/placeholder/400/200" alt="Deluxe Room" class="room-image">
+                <div class="room-details">
+                    <h3>Deluxe Room</h3>
+                    <p class="room-price">Rupees 1599/night</p>
+                    <div class="room-features">
+                        <span>2 Beds</span>
+                        <span>•</span>
+                        <span>Ocean View</span>
+                        <span>•</span>
+                        <span>WiFi</span>
+                    </div>
+                    <button class="book-button">Book Now</button>
+                </div>
+            </div>
+
+            <!-- Room Card 2 -->
+            <div class="room-card">
+                <img src="/api/placeholder/400/200" alt="Suite" class="room-image">
+                <div class="room-details">
+                    <h3>Executive Suite</h3>
+                    <p class="room-price">Rupees 2999/night</p>
+                    <div class="room-features">
+                        <span>King Bed</span>
+                        <span>•</span>
+                        <span>Balcony</span>
+                        <span>•</span>
+                        <span>Spa</span>
+                    </div>
+                    <button class="book-button">Book Now</button>
+                </div>
+            </div>
+
+            <!-- Room Card 3 -->
+            <div class="room-card">
+                <img src="/api/placeholder/400/200" alt="Family Room" class="room-image">
+                <div class="room-details">
+                    <h3>Family Room</h3>
+                    <p class="room-price">Rupees 3999/night</p>
+                    <div class="room-features">
+                        <span>3 Beds</span>
+                        <span>•</span>
+                        <span>Kitchen</span>
+                        <span>•</span>
+                        <span>Pool</span>
+                    </div>
+                    <button class="book-button">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About LuxStay</h3>
+                <p>Experience luxury and comfort at our premium hotel locations worldwide.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: info@luxstay.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
+                <p>Address: 123 Luxury Ave, Resort City</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="#" style="color: white;">Rooms & Suites</a></p>
+                <p><a href="#" style="color: white;">Special Offers</a></p>
+                <p><a href="#" style="color: white;">Book Now</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
