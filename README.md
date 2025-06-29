@@ -1,16 +1,16 @@
 Perfect! 🚀
 Let’s level it up with:
-✅ **A database schema diagram** for your 12 tables
-✅ **Badges** for Node.js, PostgreSQL, license, and last commit — so it looks professional at a glance.
+✅ A database schema diagram for your 12 tables
+✅ Badges for Node.js, PostgreSQL, license, and last commit — so it looks professional at a glance.
 
 ---
 
-## 🏗 Here’s your **updated `README.md`**
+🏗 Here’s your updated `README.md`
 
 (fully formatted with the diagram + badges)
 
 ````markdown
-# 🏨 Smart Hotel Reservation Management System
+🏨 Smart Hotel Reservation Management System
 
 [![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)](https://nodejs.org/)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
@@ -19,7 +19,7 @@ Let’s level it up with:
 
 ---
 
-The **Smart Hotel Reservation Management System** is a comprehensive web-based application designed to streamline and modernize the hotel booking process. It transforms traditional hotel reservations into a digital platform that enhances both customer experience and hotel management efficiency.
+The Smart Hotel Reservation Management System is a comprehensive web-based application designed to streamline and modernize the hotel booking process. It transforms traditional hotel reservations into a digital platform that enhances both customer experience and hotel management efficiency.
 
 This platform provides:
 - ✅ Real-time room availability
@@ -29,80 +29,80 @@ This platform provides:
 
 ---
 
-## 🎯 Objectives
-- 🌐 Develop a **responsive web interface** for customers to search, view, and book hotel rooms in real-time.
-- 🤖 Implement **intelligent room allocation** that prevents double bookings.
-- 📊 Build an **admin dashboard** for managing bookings, inventory, and analytics.
-- 🔐 Handle secure **guest profiles, preferences, and feedback**.
+🎯 Objectives
+- 🌐 Develop a responsive web interface for customers to search, view, and book hotel rooms in real-time.
+- 🤖 Implement intelligent room allocation that prevents double bookings.
+- 📊 Build an admin dashboard for managing bookings, inventory, and analytics.
+- 🔐 Handle secure guest profiles, preferences, and feedback.
 
 ---
 
-## 🛠 Tech Stack
+🛠 Tech Stack
 | Layer      | Technologies |
 |------------|--------------|
-| **Frontend** | HTML5, CSS3, JavaScript, React.js, Material-UI |
-| **Backend** | Node.js, Express.js, REST APIs |
-| **Database** | PostgreSQL |
-| **Auth & Security** | JWT Authentication |
-| **Extras** | Payment Gateway, Email Notifications, Analytics, Cloud Hosting |
+| Frontend | HTML5, CSS3, JavaScript, React.js, Material-UI |
+| Backend | Node.js, Express.js, REST APIs |
+| Database | PostgreSQL |
+| Auth & Security | JWT Authentication |
+| Extras | Payment Gateway, Email Notifications, Analytics, Cloud Hosting |
 
 ---
 
-## 🗃 Database Schema
+🗃 Database Schema
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/sreeyadora/hotel_reservation/main/assets/hotel_db_schema.png" alt="Database Schema" width="600"/>
 </p>
 
-> 📌 **Schema Overview:**  
-> - **12 tables** handle users, rooms, bookings, payments, services, feedback, and historical data.  
+> 📌 Schema Overview:  
+> - 12 tables handle users, rooms, bookings, payments, services, feedback, and historical data.  
 > - Ensures consistency, avoids double bookings, and maintains complete audit trails.
 
 ---
 
-## ⚙️ Core Features & Algorithms
+⚙️ Core Features & Algorithms
 
-### 🏨 Room Allocation
+🏨 Room Allocation
 - Assigns rooms intelligently based on preferences & availability
 - Optimizes occupancy rates
 - Dynamically adjusts pricing
 
-### 🔍 Search & Filter
+🔍 Search & Filter
 - Real-time availability checks
 - Filters by date, price range, amenities
 
-### 📅 Booking Management
+📅 Booking Management
 - Prevents double bookings
 - Handles cancellations & modifications
 - Automatic email confirmations
 
 ---
 
-## 🚀 How to Run
+🚀 How to Run
 
-### 📥 Clone the repository
+📥 Clone the repository
 ```bash
 git clone https://github.com/sreeyadora/hotel_reservation.git
 cd hotel_reservation
 ````
 
-### 🐍 Install dependencies
+🐍 Install dependencies
 
 ```bash
 npm install
 ```
 
-### ⚙️ Configure database
+⚙️ Configure database
 
 * Make sure PostgreSQL is running & credentials are set in `.env`
 
-### ▶️ Run the app
+▶️ Run the app
 
 ```bash
 npm start
 ```
 
-### 🌐 Open in browser
+🌐 Open in browser
 
 ```
 http://localhost:3000
@@ -110,7 +110,7 @@ http://localhost:3000
 
 ---
 
-## 🔥 Future Enhancements
+🔥 Future Enhancements
 
 * Loyalty programs & multi-language support
 * AI-powered room suggestions
@@ -118,7 +118,7 @@ http://localhost:3000
 
 ---
 
-## 📬 Contact
+📬 Contact
 
 Connect with me:
 
