@@ -1,115 +1,141 @@
-# hotel_reservation
-The Smart Hotel Reservation Management System is a comprehensive web-based application designed to streamline and modernize the hotel booking process. This system aims to transform traditional hotel reservation methods into a digital platform that enhances both customer experience and hotel management efficiency. The platform provides real-time room availability, automated booking confirmation, and integrated payment processing, significantly reducing manual intervention and potential booking errors.
-The system incorporates responsive design principles to ensure accessibility across various devices, from desktop computers to mobile phones. It features an intuitive user interface that guides customers through the booking process while providing hotel administrators with powerful tools for managing reservations, room inventory, and customer data. The integration of modern web technologies and secure payment gateways ensures a safe and seamless booking experience for all users.
-Objectives
+Perfect! 🚀
+Let’s level it up with:
+✅ **A database schema diagram** for your 12 tables
+✅ **Badges** for Node.js, PostgreSQL, license, and last commit — so it looks professional at a glance.
 
-Develop a user-friendly, responsive web interface that enables customers to search, view, and book hotel rooms in real-time while providing automated confirmation and secure payment processing
-Implement an intelligent room management system that optimizes room allocation and prevents double bookings through automated availability tracking and reservation synchronization
-Create a comprehensive administrative dashboard for hotel staff to manage bookings, room inventory, and generate analytical reports for business intelligence
-Design and implement a secure customer relationship management system that handles guest profiles, preferences, and feedback to enhance service personalization
+---
 
-Methodology
-1.  Domain
-  Hospitality Management
-  Web Application Development
-  Database Management Systems
+## 🏗 Here’s your **updated `README.md`**
 
-2.  Database Design
-  Tables (12 core tables):
+(fully formatted with the diagram + badges)
 
-3.  Users (Customers & Staff)
-  User profiles
-  Authentication details
-  Contact information
+````markdown
+# 🏨 Smart Hotel Reservation Management System
 
-4.  Rooms
-  Room numbers
-  Types
-  Status
-  Amenities
+[![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)](https://nodejs.org/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![License](https://img.shields.io/github/license/sreeyadora/hotel_reservation?style=flat)](LICENSE)
+[![Last Commit](https://img.shields.io/github/last-commit/sreeyadora/hotel_reservation?style=flat)](https://github.com/sreeyadora/hotel_reservation/commits/main)
 
-5.  Room_Types
-  Categories
-  Base pricing
-  Capacity
-  Features
+---
 
-6.  Bookings
-  Reservation details
-  Check-in/out dates
-  Status
-  Payment information
+The **Smart Hotel Reservation Management System** is a comprehensive web-based application designed to streamline and modernize the hotel booking process. It transforms traditional hotel reservations into a digital platform that enhances both customer experience and hotel management efficiency.
 
-5.  Payments
-  Transaction records
-  Payment status
-  Payment methods
+This platform provides:
+- ✅ Real-time room availability
+- ✅ Automated booking confirmations
+- ✅ Integrated secure payment processing
+- 🔒 All while reducing manual intervention & minimizing booking errors.
 
-6.  Services
-  Additional services
-  Pricing
-  Availability
+---
 
-7.  Feedback
-  Customer reviews
-  Ratings
-  Comments
+## 🎯 Objectives
+- 🌐 Develop a **responsive web interface** for customers to search, view, and book hotel rooms in real-time.
+- 🤖 Implement **intelligent room allocation** that prevents double bookings.
+- 📊 Build an **admin dashboard** for managing bookings, inventory, and analytics.
+- 🔐 Handle secure **guest profiles, preferences, and feedback**.
 
-8.  Room_Inventory
-  Availability status
-  Maintenance records
-  Cleaning schedule
+---
 
-9.Price_History
-  Historical pricing
-  Season adjustments
-  Special rates
-  
-10.  Customer_Preferences
-Guest preferences
-Special requests
-Accommodation history
+## 🛠 Tech Stack
+| Layer      | Technologies |
+|------------|--------------|
+| **Frontend** | HTML5, CSS3, JavaScript, React.js, Material-UI |
+| **Backend** | Node.js, Express.js, REST APIs |
+| **Database** | PostgreSQL |
+| **Auth & Security** | JWT Authentication |
+| **Extras** | Payment Gateway, Email Notifications, Analytics, Cloud Hosting |
 
-11.  Staff_Roles
-  Role definitions
-  Access levels
-  Responsibilities
+---
 
-12.  Booking_History
-  Historical records
-  Cancellations
-  Modifications
+## 🗃 Database Schema
 
-Technologies Used
-Frontend:HTML5, CSS3, JavaScript, React.js for dynamic UI,Material-UI components,Responsive design framework
+<p align="center">
+  <img src="https://raw.githubusercontent.com/sreeyadora/hotel_reservation/main/assets/hotel_db_schema.png" alt="Database Schema" width="600"/>
+</p>
 
-Backend:Node.js with Express, PostgreSQL, database, RESTful API architecture, JWT authentication.
+> 📌 **Schema Overview:**  
+> - **12 tables** handle users, rooms, bookings, payments, services, feedback, and historical data.  
+> - Ensures consistency, avoids double bookings, and maintains complete audit trails.
 
-Additional Tools:
-Payment gateway integration
-Email notification system
-Analytics tools
-Cloud hosting platform
+---
 
-Algorithms and Features
-Room Allocation Algorithm
+## ⚙️ Core Features & Algorithms
 
-Intelligent room assignment based on preferences
-Occupancy optimization
-Dynamic pricing adjustment
+### 🏨 Room Allocation
+- Assigns rooms intelligently based on preferences & availability
+- Optimizes occupancy rates
+- Dynamically adjusts pricing
+
+### 🔍 Search & Filter
+- Real-time availability checks
+- Filters by date, price range, amenities
+
+### 📅 Booking Management
+- Prevents double bookings
+- Handles cancellations & modifications
+- Automatic email confirmations
+
+---
+
+## 🚀 How to Run
+
+### 📥 Clone the repository
+```bash
+git clone https://github.com/sreeyadora/hotel_reservation.git
+cd hotel_reservation
+````
+
+### 🐍 Install dependencies
+
+```bash
+npm install
+```
+
+### ⚙️ Configure database
+
+* Make sure PostgreSQL is running & credentials are set in `.env`
+
+### ▶️ Run the app
+
+```bash
+npm start
+```
+
+### 🌐 Open in browser
+
+```
+http://localhost:3000
+```
+
+---
+
+## 🔥 Future Enhancements
+
+* Loyalty programs & multi-language support
+* AI-powered room suggestions
+* Mobile app integration
+
+---
+
+## 📬 Contact
+
+Connect with me:
+
+* [LinkedIn](https://linkedin.com/in/sreeyadora)
+* [Email](mailto:sreeyadora@gmail.com)
+
+---
+
+⭐ **If you found this helpful, please star the repo!**
+It motivates me to build more & helps others discover it.
+
+---
+
+## 🔗 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+```
 
 
-Search and Filter System
-
-Real-time availability checking
-Price range filtering
-Amenity-based search
-Date-based filtering
-
-
-Booking Management
-
-Double-booking prevention
-Automatic confirmation
-Cancellation handling
-Modification processing
