@@ -1,13 +1,5 @@
-Perfect! 🚀
-Let’s level it up with:
-✅ A database schema diagram for your 12 tables
-✅ Badges for Node.js, PostgreSQL, license, and last commit — so it looks professional at a glance.
-
+Hotel Reservation
 ---
-
-🏗 Here’s your updated `README.md`
-
-(fully formatted with the diagram + badges)
 
 ````markdown
 🏨 Smart Hotel Reservation Management System
